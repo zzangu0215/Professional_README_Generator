@@ -51,7 +51,7 @@ function renderLicenseBadgeLink(license) {
 
   const licenseKey = getLicenseKeyword(license);
 
-  return `[![License](https://img.shields.io/badge/License-${licenseKey.badgeKey})](${licenseKey.linkKey})`;
+  return `[![License](https://img.shields.io/badge/License-${licenseKey.badgeKey})](https://opensource.org/licenses/${licenseKey.linkKey})`;
 }
 
 
@@ -100,7 +100,7 @@ function generateMarkdown(data) {
 
   ## Questions
   🖐 If you have any question about me or my project, feel free to contact me!  
-      - My **Github** Link: [**${data.github}**](https://github.com/${data.github})
+      - My **Github** Link: [**${data.github}**](https://github.com/${data.github})  
       - My **Email**: **${data.email}**
   `;
 
