@@ -1,21 +1,19 @@
 
 # A Professional README Generator
 
-[![License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-📑 This is an application using "node.js" and "npm inquirer" that creates a professional README.md file for me.
+📑 This is an application using "node.js" and "npm i" that creates a professional README.md file for me.
 
 ## Installation
-💾 "npm i inquirer" is required. 
+💾 "npm i" is required. 
 
 ## Usage
 💻 Anywhere I want to have a professional README.md
 
 ## License
-  
-  This application is covered by the Mozilla license.
-  
+This application is covered by the **Apache** license.
 
 ## Contributing
 🔥 Zzangu, My Bestie

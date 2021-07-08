@@ -58,9 +58,7 @@ function renderLicenseSection(license) {
     return;
   }
 
-  const licenseBlock = `  
-  This application is covered by the ${license} license.
-  `;
+  const licenseBlock = `This application is covered by the **${license}** license.`;
 
   return licenseBlock;
 }
