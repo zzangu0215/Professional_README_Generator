@@ -35,10 +35,10 @@ const questions = [
     name: 'instructions',
   },
   {
-    type: 'checkbox',
-    message: 'Choose the appropriate licenses for your project: ',
-    name: 'licenses',
-    choices: ['MIT', 'Mozilla', 'ISC', 'Apache', 'GNU'],
+    type: 'list',
+    message: 'Choose the appropriate license for your project: ',
+    name: 'license',
+    choices: ['MIT', 'Mozilla', 'ISC', 'IBM', 'Eclipse', 'Apache'],
   },
   {
     type: 'input',
