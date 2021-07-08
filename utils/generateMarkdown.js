@@ -76,16 +76,33 @@ function generateMarkdown(data) {
 
   const readmeBlock = `
   
-  # ${data.title}
+  # ${data.project-title}
 
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadgeLink(data.license)}
 
   ## Description
+  📑 ${data.description}
 
+  ## Installation
+  💾 ${data.installation} 
 
+  ## Usage
+  💻 ${data.usage}
 
-  `
+  ## License
+  ${renderLicenseSection(data.license)}
 
+  ## Contributing
+  🔥 ${data.contributors}
+
+  ## Tests
+  📌 ${data.instructions}
+
+  ## Questions
+  🖐 If you have any question about me or my project, feel free to contact me!  
+    - My **Github** Link: [**${data.github}**](https://github.com/${data.github})
+    - My **Email**: **${data.email}**
+  `;
 
   return readmeBlock;
 }
