@@ -1,5 +1,5 @@
 function getLicenseKeyword(license) {
-  const licenseKey;
+  let licenseKey = {};
 
   if (license === 'Apache') {
     licenseKey = {
@@ -76,7 +76,7 @@ function generateMarkdown(data) {
 
   const readmeBlock = `
   
-  # ${data.project-title}
+  # ${data.title}
 
   ${renderLicenseBadgeLink(data.license)}
 
@@ -100,8 +100,8 @@ function generateMarkdown(data) {
 
   ## Questions
   🖐 If you have any question about me or my project, feel free to contact me!  
-    - My **Github** Link: [**${data.github}**](https://github.com/${data.github})
-    - My **Email**: **${data.email}**
+      - My **Github** Link: [**${data.github}**](https://github.com/${data.github})
+      - My **Email**: **${data.email}**
   `;
 
   return readmeBlock;

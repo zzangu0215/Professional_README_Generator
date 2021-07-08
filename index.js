@@ -8,7 +8,7 @@ const questions = [
   {
     type: 'input',
     message: 'What is your project title? ',
-    name: 'project-title',
+    name: 'title',
   },
   {
     type: 'input',
@@ -53,32 +53,36 @@ const questions = [
   },
 ];
 
-function getUserInputs() {
+function writeREADME() {
 
-  return inquirer.prompt(questions);
-
-}
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-  const generateMD = generateMarkdown(data);
-  fs.writeFile(fileName, generateMD, (err) => err ? console.log(err):console.log('Success ✔'));
-  // inquirer
-  //   .prompt(questions)
-  //   .then((data) => {
-  //     console.log(data);
-
-  //     const generateMD = generateMarkdown(data);
-  //     fs.writeFile(fileName, generateMD, (err) => err ? console.log(err):console.log('Success ✔'));
-  //   });
+  inquirer
+    .prompt(questions)
+    .then((data) => {
+      const generateMD = generateMarkdown(data);
+      fs.writeFile('./sample/README.md', generateMD, (err) => err ? console.log(err):console.log('Success ✔'));
+    })
 
 }
+
+// function getUserInputs() {
+
+//   return inquirer.prompt(questions);
+
+// }
+
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+
+//   const generateMD = generateMarkdown(data);
+//   fs.writeFile(fileName, generateMD, (err) => err ? console.log(err):console.log('Success ✔'));
+
+// }
 
 // TODO: Create a function to initialize app
 function init() {
-  const data = getUserInputs();
-  writeToFile('./sample/README.md', data);
+  // const data = getUserInputs();
+  // writeToFile('./sample/README.md', data);
+  writeREADME();
 }
 
 // Function call to initialize app
