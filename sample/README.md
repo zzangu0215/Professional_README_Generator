@@ -3,6 +3,15 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## Table of Contents
+- [**Description**](#description)
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**License**](#license)
+- [**Contributing**](#contributing)
+- [**Tests**](#tests)
+- [**Questions**](#questions)
+
 ## Description
 📑 This is an application using "node.js" and "npm i" that creates a professional README.md file for me.
 
